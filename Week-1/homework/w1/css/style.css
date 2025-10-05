@@ -1,0 +1,49 @@
+.main {
+    color: red;
+    border: 2px solid rgb(184, 11, 184);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.a {
+    border: 2px solid blue;
+    width: 80%;
+    height: 230px;
+
+}
+
+.b-box {
+    border: 2px solid green;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.s-1 {
+    color:red;
+}
+
+.sectionTwo {
+    border: 2px solid aqua;
+    margin-top: 10px;
+    width: 80%;
+    height: 50%;
+}
+
+.yt-vids {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.link-1 {
+    margin-left: 10px;
+}
+
+.link-2 {
+    margin-left: 10px;
+}
+
+.pics {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
