@@ -1,0 +1,45 @@
+.trying-elements {
+    margin-right: 20px;
+    color: white;
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    transition: transform 0.5s;
+    cursor: url(../images/icons8-cursor-30.png), auto;
+}
+
+.trying-elements:hover {
+    color: black;
+    transform: scale(1.2);
+    background-color: aqua;
+}
+
+.body-cursor {
+    cursor: url(../images/icons8-cursor-30.png), auto;
+}
+
+a {
+    cursor: url(../images/icons8-cursor-30.png), auto;
+}
+
+.sup-text {
+    font: 20px;
+    color: darkslategrey;
+}
+
+@keyframes AlternatingColors {
+    0% {color: black;}
+    25% {color: aqua;}
+    50% {color: red;}
+    75% {color: gold;}
+    100% {color: orange}
+}
+
+.color-wheel {
+    animation: AlternatingColors 10s infinite;
+}
+.box {
+    border: 2px solid black;
+    height: 500px;
+    width: 1004px;
+}
