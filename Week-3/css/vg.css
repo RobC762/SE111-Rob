@@ -1,0 +1,92 @@
+#header {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    border: 2px solid black;
+}
+
+#header h1 {
+    font-family: "Stalinist One", "ui-display";
+    font-size: 50px;
+}
+body {
+     /*special tag for gradient image*/
+    background: #0a0404;
+    background: linear-gradient(90deg, rgba(10, 4, 4, 1) 0%, rgba(245, 81, 81, 1) 100%, rgba(252, 176, 69, 1) 100%);
+    height: 100vh;
+}
+#nav {
+    font-family: "Press Start 2P", "ui-dsiplay";
+    text-align: center;
+    height: 50px;
+    padding-top: 40px;
+    
+}
+
+.nav-btn {
+    border: 5px solid black;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.nav-btn:link {
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    font-size: 20px;
+    color: #8a2929;
+    text-decoration: underline;
+}
+
+.nav-btn:visited {
+    text-decoration: line-through;
+    color: black;
+}
+
+@keyframes AlternatingColors {
+    0% {color: black;}
+    25% {color: aqua;}
+    50% {color: red;}
+    75% {color: gold;}
+    100% {color: orange}
+}
+
+@keyframes RapidColor {
+    0% {color: rgb(22, 141, 68);}
+    50% {color: rgba(68, 70, 139, 0.678);}
+    100% {color: rgb(199, 10, 10)}
+}
+.color-wheel {
+    animation: AlternatingColors 10s infinite;
+}
+
+.rapid {
+    animation: RapidColor 3s infinite;
+}
+
+#content {
+    height: 1000px;
+    border: 2px solid black;
+}
+
+#content h2 {
+    margin: 0;
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.10);
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.breathe-effect {
+    animation: breathe 5s infinite;
+}
