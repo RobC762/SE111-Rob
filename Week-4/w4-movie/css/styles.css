@@ -1,0 +1,404 @@
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+
+#wrapper {
+  width: 1000px;
+  height: auto;
+  background-color: #18191A;
+  border: 2px solid antiquewhite;
+
+}
+
+
+/* NAVIGATION*/
+.btn-container {
+  width:980px;
+  height:60px;
+  border:2px solid antiquewhite;
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  background-color: #18191A;
+}
+
+.link-button {
+
+  width:1250px;
+  height:50px;
+  text-align:center;
+  line-height:50px;
+  text-decoration:none;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right:2px;
+  margin-left:2px;
+  background-color:rgb(73, 71, 71);
+  box-shadow:3px 3px 5px black;
+
+}
+
+.link-button {
+
+  color:white;
+}
+
+.link-button:hover {
+
+  background-image: url(../images/character1.jpg);
+  background-size: 250px; 
+  background-position: center;
+  
+}
+
+.link-button-2 {
+
+  width:1250px;
+  height:50px;
+  text-align:center;
+  line-height:50px;
+  text-decoration:none;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right:2px;
+  margin-left:2px;
+  background-color:rgb(73, 71, 71);
+  box-shadow:3px 3px 5px black;
+
+}
+
+.link-button-2 {
+
+  color:white;
+}
+
+.link-button-2:hover {
+  background-image: url(../images/character2.jpg);
+  background-size: 300px; 
+  background-position: 30% 20%;
+  
+}
+.link-button-home {
+
+  width:1250px;
+  height:50px;
+  text-align:center;
+  line-height:50px;
+  text-decoration:none;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right:2px;
+  margin-left:2px;
+  background-color:rgb(73, 71, 71);
+  box-shadow:3px 3px 5px black;
+
+}
+
+.link-button-home {
+
+  color:white;
+}
+
+.link-button-home:hover {
+  background-image: url(../images/theater.jpg);
+  background-size: 300px; 
+  background-position: 80% 70%;
+  
+}
+
+.link-button-imdb {
+  width:120px;
+  height:50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 415px;
+  margin-bottom: 30px;
+  text-align:center;
+  line-height:50px;
+  text-decoration:none;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color:rgb(73, 71, 71);
+  box-shadow:3px 3px 5px black;
+
+}
+
+.link-button-imdb {
+
+  color:white;
+}
+
+.link-button-imdb:hover {
+  background-image: url(../images/review.jpg);
+  background-size: 100px; 
+  background-position: 50% 50%;
+  
+}
+/* Header stuff */
+.home {
+  
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+.wrapper-main {
+  border: 2px solid antiquewhite;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+#header{
+  border: 2px solid antiquewhite;
+  height: 100px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+.title {
+  text-align: center;
+  color: gold;
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+
+
+}
+#header-2 h2 {
+    color: antiquewhite;
+    display: flex;
+    justify-content:center
+    
+}
+
+.pulse-text {
+    color: antiquewhite;
+    display: flex;
+    justify-content:center;
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0;
+    animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.animation-2 {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.animation-2 span {
+  display: inline-block;
+  position: relative;
+  animation: bounceText 1.5s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+#header-2 h3 {
+    color: azure;
+    display: flex;
+    justify-content:center
+
+}
+
+body {
+    background-image: url(../images/theater.jpg);
+    background-size: cover;
+}
+
+/* MOVIE INFO */
+
+.info {
+    display: block;
+    justify-content: right;
+    float: right;
+    margin-right: 50px;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    color: whitesmoke;
+}
+
+.info2 {
+    display: block;
+    justify-content: right;
+    float: right;
+    margin-right: 90px;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    color: whitesmoke;
+}
+/*Cast*/
+
+
+.character {
+    display: block;
+    justify-content: center;
+    float: right;
+    margin-right: 380px;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: whitesmoke;
+}
+.characterFix1 {
+    display: block;
+    justify-content: center;
+    float: right;
+    margin-right: 395px;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: whitesmoke;
+}
+.characterFix2 {
+    display: block;
+    justify-content: center;
+    float: right;
+    margin-right: 360px;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: whitesmoke;
+}
+
+.cast-pics {
+    display: block;
+    float: right;
+    margin-top: -200px;
+    object-fit: cover;
+}
+
+.img-scale {
+  object-fit: cover;
+}
+.img-scaleFix {
+  object-fit: cover;
+  object-position: top;
+}
+
+
+.animation-2-cast {
+  display: flex;
+  justify-content: center;
+  color: antiquewhite;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+.animation-2-cast span {
+  display: inline-block;
+  justify-content: center;
+  position: relative;
+  animation: bounceText 1.5s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+.characterFix {
+  
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: whitesmoke;
+}
+
+/* Reviews */
+.date {
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  color: whitesmoke;
+}
+
+.review-section {
+   border: 2px solid antiquewhite;
+   margin-top: 20px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 18px;
+   color: wheat;
+ 
+}
+
+.text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: wheat;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pulse-text-unknown {
+    color: antiquewhite;
+    display: flex;
+    justify-content:center;
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    opacity: 0;
+    animation: pulse 2s ease-in-out infinite alternate;
+}
+
+
+
+
+/* ANIMATIONS */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1); 
+      opacity: 0.7; 
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+@keyframes bounceText {
+  0%,40%,100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+ 
+}
+
+
+
+
