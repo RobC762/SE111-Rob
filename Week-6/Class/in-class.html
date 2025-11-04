@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In class Lab</title>
+</head>
+<body>
+
+    <script>
+        var num1 = prompt("What is the first number?")
+        var conversion = Number(num1)
+        var num2 = prompt("What is the second number?")
+        var conversion2 = Number(num2)
+        var choice = prompt("What operation would you like to perform (+ or *)");
+
+        function calculation(a, b)
+        {
+            return a + b;
+        }
+
+        function calculation2(a, b)
+        {
+            return a * b;
+        }
+
+        if (choice == "+")
+        {
+            console.log(calculation(conversion, conversion2))
+        } 
+        else if (choice == "*")
+        {
+            console.log(calculation2(conversion, conversion2))
+        }
+        else
+        {
+            console.log("Not a valid input. Retry again")
+        }
+        
+        
+    </script>
+    
+</body>
+</html>
