@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 JS Homework</title>
+</head>
+<body>
+    <script>
+        //Pay Calculator - Robert Cady
+        prompt("Hello, welcome to the Pay Calculator! (prese enter to continue)\n")
+
+        var pay = prompt("What is your hourly pay? (enter exactly (.i.e 15.50))")
+        var payConversion = Number(pay)
+        var hours = prompt("How many hours do you work a week?(Only state the number)")
+        var hrConversion = Number(hours)
+        var taxRate = .20;
+
+        function calculation(a, b) 
+        {
+            var payPeriod = hours * 2;
+            var grossPay = pay * payPeriod;
+            var uncleSam = grossPay * taxRate;
+            var netIncome = grossPay * uncleSam;
+
+            return grossPay;
+        }
+
+        function calculation2(a, b) 
+        {
+            var payPeriod = hours * 2;
+            var grossPay = pay * payPeriod;
+            var uncleSam = grossPay * taxRate;
+
+            return uncleSam;
+        }
+
+        function calculation3(a, b) 
+        {
+            var payPeriod = hours * 2;
+            var grossPay = pay * payPeriod;
+            var uncleSam = grossPay * taxRate;
+            var netIncome = grossPay - uncleSam;
+            
+            return netIncome;
+        }
+
+        function main()
+        {
+            if (typeof(payConversion) === String) {
+            console.log("This could not be recognized as a number, please try again.")
+            }
+
+            if (hrConversion >= 168) {
+                console.log("Who are you superman? Worked an entire week, 0 sleep? Try again!!")
+                return;
+            } 
+            else 
+            {
+                alert("Okay here are the final calculations!(press enter to continue)\n")
+
+                console.log("Gross Pay: $" + Math.trunc(calculation(payConversion, hrConversion)).toFixed(2))
+                console.log("Uncle Sam's Share: $" + Math.trunc(calculation2(payConversion, hrConversion)).toFixed(2))
+                console.log("Net Pay: $" + Math.trunc(calculation3(payConversion, hrConversion)).toFixed(2))
+
+                alert("Gross Pay: $" + Math.trunc(calculation(payConversion, hrConversion)).toFixed(2) + "\n" +
+                        "Uncle Sam's Share: $" + Math.trunc(calculation2(payConversion, hrConversion)).toFixed(2) + "\n" + 
+                        "Net Pay: $" + Math.trunc(calculation3(payConversion, hrConversion)).toFixed(2))
+               
+                document.write("<b>Gross Pay:</b> $" + Math.trunc(calculation(payConversion, hrConversion)).toFixed(2) + "<br><br>")
+                document.write("<b>Uncle Sam's Share:</b> $" + Math.trunc(calculation2(payConversion, hrConversion)).toFixed(2) + "<br><br>")
+                document.write("<b>Net Pay:</b> $" + Math.trunc(calculation3(payConversion, hrConversion)).toFixed(2) + "<br><br>")
+            }
+        }
+
+        main()
+
+    </script>
+    
+</body>
+</html>
