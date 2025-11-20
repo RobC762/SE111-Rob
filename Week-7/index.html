@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="query">
+        <p>Hello!</p>
+        <input type="button" id="submit" value="submit">
+    </div>
+    <script>
+        var divTag = document.querySelector('#query')
+        console.log(divTag.innerHTML)
+        divTag.innerHTML += "<h1>HELLO!</h1>"
+
+        var button = document.getElementById("submit")
+        console.log(button)
+
+        function addAlert() {
+            alert("You Pressed a Button")
+        }
+        button.addEventListener('click', addAlert)
+    </script>
+    
+</body>
+</html>

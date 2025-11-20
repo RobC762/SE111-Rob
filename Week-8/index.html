@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBjects, for loops, & Arrays</title>
+</head>
+<body>
+    <script>
+        //Objects
+        //Key Value Pair
+        var person = {
+            firstName: "J",
+            lastName: "A"
+        }
+
+        //Objects
+        var car = {
+            wheel: 4,
+            make: "honda",
+            model: "crv",
+            year: 1995,
+        }
+
+        console.log(car.year)//prints the year of the object
+
+        function test(paramOne) {
+            console.log(paramOne)
+        }
+
+        //arrays
+
+        var trash = ["test", "lol"]
+
+        var twoDee = [[1, 3], [4, 7]]
+        //accessing 2d array
+        console.log(twoDee[1][1]) // accesses '7'
+
+        //for loops
+        for (let i = 0; i <= trash.length; i++) {
+            console.log(trash[i])
+        }
+        //looping through the initial array
+        for (let i = 0; i < twoDee.length; i ++) {
+            //looping through each element in the array object
+            for (let j = 0; j < twoDee[i].length; i++) {
+                console.log(twoDee[i][j])
+            }
+        }
+    </script> 
+</body>
+</html>
