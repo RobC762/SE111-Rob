@@ -67,7 +67,7 @@
 				first: firstName.value,
 				last: lastName.value
             }
-
+			
 			people.push(person);
 
 			 for(let i=0; i < people.length-1; i++)
@@ -84,13 +84,10 @@
 			}
 
             console.log(people)
-
             var output = "";
 
-	
 			for(let i = 0; i < people.length; i++)
             {
-
 				for(key in people[i])
                 {
                     output += key.toUpperCase() + ": " + people[i][key] + "<br>";
@@ -99,7 +96,6 @@
             }
             console.log(output)
             out.innerHTML = output
-
 		}
 		
     </script>
