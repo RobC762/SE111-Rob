@@ -1,0 +1,53 @@
+<!--
+BOM === Browser Object Model
+Javascript is part of an object called "window"
+
+Window represents the browser 
+
+    window object can customize;
+        - screen (display info)
+        - language
+        - document(current webpage)
+        - history (browser history)
+        - Location (current URL)
+
+DOM === Document Object Model
+
+represents everything an <html> tag
+
+A giant tree that stores everything
+
+Every tag has properties associated with them
+
+ALL elements in DOM are objects
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    WINDOW EXAMPLES-->
+
+    <script>
+        console.log(window.location) //prints the current url
+
+        window.location = "google.com" //changeing the url
+
+        var burger = document.getElementById(burger)
+        burger.src = "hotdog"
+
+        var divContainer = document.getElementById("Parent")
+        divContainer.children[0] = "boof" // accessing an array or parent/child relatinships
+
+
+    </script>
+</body>
+</html>
+<!---->
